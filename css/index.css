@@ -1,2 +1,12 @@
 @import url(./style.css);
 
+.body {
+    background-color: var(--cinza);
+}
+
+h1 {
+    font-family: var(--fonte_principal);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}

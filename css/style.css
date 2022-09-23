@@ -1,4 +1,37 @@
 :root {
     --branco: #FFFFFF;
+    --cinza: #a4a3a3;
     --preto: #000000;
+    --fonte_principal: 'Raleway', sans-serif;
+    --fonte_secundaria: 'Mukta', sans-serif;
+}
+
+body {
+    height: 80%;
+    width: 100%;
+}
+
+header {
+    background-color: var(--preto);
+    height: 10%;
+    width: 100%;
+}
+.cabecalho {
+    color: var(--branco);
+    font-size: 18px;
+    padding-left: 50%;
+}
+
+footer {
+    background-color: var(--preto);
+    line-height: 24px;
+    padding: 2rem;
+    position: flex;
+}
+
+.rodape {
+    color: var(--branco);
+    font-family: var(--fonte_secundaria);
+    font-size: 18px;
+    text-align: center;
 }
