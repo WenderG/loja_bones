@@ -1,25 +1,15 @@
 :root {
     --branco: #FFFFFF;
     --cinza: #a4a3a3;
+    --cinza_claro: #dcdbdb;
     --preto: #000000;
     --fonte_principal: 'Raleway', sans-serif;
-    --fonte_secundaria: 'Mukta', sans-serif;
-}
-
-body {
-    height: 80%;
-    width: 100%;
+    --fonte_secundaria: 'Pacifico', cursive;
 }
 
 header {
     background-color: var(--preto);
-    height: 10%;
-    width: 100%;
-}
-.cabecalho {
-    color: var(--branco);
-    font-size: 18px;
-    padding-left: 50%;
+    padding: 1.5rem;
 }
 
 footer {
@@ -35,3 +25,25 @@ footer {
     font-size: 18px;
     text-align: center;
 }
+
+/* estilo do cabeçalho */
+.cabecalho {
+    font-size: 18px;
+    font-family: var(--fonte_secundaria);
+    padding-left: 70%;
+}
+
+/* alinhamento do cabeçalho */
+nav li {
+    display: inline;
+    padding-left: 2em;
+}
+
+/* decoração cabeçalho */
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+}
+ nav a:hover{
+    color: var(--cinza_claro);
+ }

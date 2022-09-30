@@ -5,8 +5,9 @@
 }
 
 h1 {
-    font-family: var(--fonte_principal);
+    font-family: var(--fonte_secundaria);
     font-size: 50px;
     font-weight: bold;
+    padding: 3rem 0 5rem 0;
     text-align: center;
 }
