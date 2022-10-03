@@ -1,4 +1,5 @@
 :root {
+    --amarelo: #f7d701;
     --branco: #FFFFFF;
     --cinza: #a4a3a3;
     --cinza_claro: #dcdbdb;
@@ -8,35 +9,37 @@
 }
 
 header {
-    background-color: var(--preto);
+    background-image: url(../img/chapeus.jpg);
+    display: grid;
+    grid-template-columns: 30% 70%;
     padding: 1.5rem;
-}
-
-footer {
-    background-color: var(--preto);
-    line-height: 24px;
-    padding: 2rem;
-    position: flex;
-}
-
-.rodape {
-    color: var(--branco);
-    font-family: var(--fonte_secundaria);
-    font-size: 18px;
-    text-align: center;
 }
 
 /* estilo do cabeçalho */
 .cabecalho {
-    font-size: 18px;
+    font-size: 30px;
+    font-weight: 600;
     font-family: var(--fonte_secundaria);
-    padding-left: 70%;
+    text-shadow: 
+               -1px -1px 0px var(--preto), 
+               -1px 1px 0px var(--preto),                    
+                1px -1px 0px var(--preto),                  
+                2px 0px 0px var(--preto);
+    
 }
+
+/* Posição do cabeçalho */
+nav {
+    margin-top: 10%;
+    padding-left: 60%;
+}
+
 
 /* alinhamento do cabeçalho */
 nav li {
     display: inline;
-    padding-left: 2em;
+    padding-top: 10em;
+
 }
 
 /* decoração cabeçalho */
@@ -47,3 +50,29 @@ nav a {
  nav a:hover{
     color: var(--cinza_claro);
  }
+
+ /* Tamanho do logo */
+.logo {
+    width: 50%;
+}
+
+
+ footer {
+    background-image: url(../img/chapeus.jpg);
+    line-height: 24px;
+    padding: 2rem;
+    position: flex;
+    
+}
+
+.rodape {
+    color: var(--branco);
+    font-family: var(--fonte_secundaria);
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 
+        -1px -1px 0px var(--preto), 
+        -1px 1px 0px var(--preto),                    
+        1px -1px 0px var(--preto),                  
+        2px 0px 0px var(--preto);
+}
