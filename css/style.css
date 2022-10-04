@@ -3,7 +3,10 @@
     --branco: #FFFFFF;
     --cinza: #a4a3a3;
     --cinza_claro: #dcdbdb;
+    --cinza_escuro: #424242;
     --preto: #000000;
+    --vermelho: #ff0000;
+    --vermelho_escuro: #850404;
     --fonte_principal: 'Raleway', sans-serif;
     --fonte_secundaria: 'Pacifico', cursive;
 }
