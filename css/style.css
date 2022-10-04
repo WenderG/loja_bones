@@ -12,7 +12,7 @@
 }
 
 header {
-    background-image: url(../img/chapeus.jpg);
+    background: url(../img/chapeus.jpg);
     display: grid;
     grid-template-columns: 30% 70%;
     padding: 1.5rem;
@@ -61,7 +61,7 @@ nav a {
 
 
  footer {
-    background-image: url(../img/chapeus.jpg);
+    background-color: var(--cinza_escuro);
     line-height: 24px;
     padding: 2rem;
     position: flex;
