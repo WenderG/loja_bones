@@ -21,41 +21,62 @@ h1 {
 .secao {
     background-color: var(--cinza_claro);
     display: grid;
-    grid-template-columns: 35% 30% 35%;
+    grid-template-columns: 40% 20% 40%;
 }
 
+/* Botões */
 .botao {
     background-color: var(--vermelho);
     border-radius: 20px;
     color: var(--branco);
     font-family: var(--fonte_principal);
-    padding: 10px 20px 10px 20px;
-    text-align: center;
+    text-align: justify;
     text-decoration: none;
     margin-bottom: 1em;
+    z-index: 1;
 }
 
-.botao:hover {
+.entrar{
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.entrar:hover {
     background-color: var(--vermelho_escuro);
-    padding: 12px 20px 12px 20px;
-    z-index: 2;
+    padding: 10px 20px 10px 20px;
+}
+
+.criar_conta{
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.criar_conta:hover {
+    background-color: var(--vermelho_escuro);
+    padding: 10px 20px 10px 20px;
 }
 
 .flex-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 20em;
 }
 
 .flex-item{
-    padding: 8rem 5rem 5rem 5rem;
+    padding: 6rem 3rem 5rem 3rem;
 }
 
+
+/* ---------------------------------------------------------------- */
+
+/* Imagens */
 .imagem1 {
-    margin: 3rem;
+    margin: 1rem 0 0 8rem;
+    z-index: 1;
 }
 
 .imagem4 {
-    margin: 4rem 0 3rem 4rem;
+    margin: 2.8rem 0 0 3rem;
+    z-index: 1;
 }
+
+/* ---------------------------------------------------------------- */
