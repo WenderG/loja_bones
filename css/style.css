@@ -5,72 +5,66 @@
     --cinza_claro: #dcdbdb;
     --cinza_escuro: #424242;
     --preto: #000000;
+    --salmao: #ff5d5d;
     --vermelho: #ff0000;
     --vermelho_escuro: #850404;
-    --fonte_principal: 'Raleway', sans-serif;
-    --fonte_secundaria: 'Pacifico', cursive;
+
+
+    --fonte_textos: 'Raleway', sans-serif;
+    --fonte_titulos: 'Pacifico', cursive;
 }
 
 header {
     background: url(../img/chapeus.jpg);
-    display: grid;
-    grid-template-columns: 30% 70%;
-    padding: 1.5rem;
 }
 
 /* estilo do cabeçalho */
 .cabecalho {
-    font-size: 30px;
-    font-weight: 600;
-    font-family: var(--fonte_secundaria);
-    text-shadow: 
-               -1px -1px 0px var(--preto), 
-               -1px 1px 0px var(--preto),                    
-                1px -1px 0px var(--preto),                  
-                2px 0px 0px var(--preto);
-    
+    padding: 2rem;
+}
+
+ /* Tamanho do logo */
+ .logo {
+    width: 0px;
 }
 
 /* Posição do cabeçalho */
-nav {
-    margin-top: 10%;
-    padding-left: 60%;
+.menu {
+    text-align: center;
 }
 
 
 /* alinhamento do cabeçalho */
-nav li {
+.item {
     display: inline;
-    padding-top: 10em;
-
+    padding: 10rem 0.5rem 0 0.5rem;
 }
 
 /* decoração cabeçalho */
-nav a {
+.posicao {
     color: var(--branco);
+    font-size: 22px;
+    font-weight: 600;
+    font-family: var(--fonte_titulos);
     text-decoration: none;
+    text-shadow: 
+               -1px -1px 0px var(--preto), 
+               -1px 1px 0px var(--preto),                    
+                1px -1px 0px var(--preto),                  
+                4px 0px 0px var(--preto);
 }
- nav a:hover{
+ .posicao:hover{
     color: var(--cinza_claro);
  }
 
- /* Tamanho do logo */
-.logo {
-    width: 50%;
-}
-
-
  footer {
     background-color: var(--cinza_escuro);
-    line-height: 24px;
-    padding: 2rem;
-    position: flex;
-    
+    padding: 3rem;
 }
 
 .rodape {
     color: var(--branco);
-    font-family: var(--fonte_secundaria);
+    font-family: var(--fonte_titulos);
     font-size: 18px;
     text-align: center;
     text-shadow: 
@@ -79,3 +73,42 @@ nav a {
         1px -1px 0px var(--preto),                  
         2px 0px 0px var(--preto);
 }
+
+@media screen and (min-width: 768px) {  
+    /* estilo do cabeçalho */
+    .cabecalho {
+        padding: 1rem;
+    }
+    
+     /* Tamanho do logo */
+     .logo {
+        width: 200px;
+    }
+    
+    /* Posição do cabeçalho */
+    .menu {
+        text-align: right;
+    }
+    
+    
+    /* alinhamento do cabeçalho */
+    .item {
+        display: inline;
+        padding: 5rem 0.5rem 0 0.5rem;
+    }
+    
+    /* decoração cabeçalho */
+    .posicao {
+        font-size: 32px;
+    }
+
+     footer {
+        padding: 5rem;
+    }
+    
+    .rodape {
+        font-size: 22px;
+    }
+    
+}
+    

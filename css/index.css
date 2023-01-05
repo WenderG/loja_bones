@@ -1,12 +1,10 @@
-@import url(./style.css);
-
 .body {
-    background-color: var(--cinza);
+    background-color: var(--branco);
 }
 
 h1 {
-    color: var(--branco);
-    font-family: var(--fonte_secundaria);
+    color: var(--cinza_claro);
+    font-family: var(--fonte_titulos);
     font-size: 50px;
     font-weight: bold;
     padding: 3rem 0 3rem 0;
@@ -18,65 +16,117 @@ h1 {
                 2px 0px 0px var(--preto);
 }
 
-.secao {
-    background-color: var(--cinza_claro);
-    display: grid;
-    grid-template-columns: 40% 20% 40%;
+/* ---------------------------------------------------------------- */
+
+.container {
+    text-align: center;
 }
 
 /* Botões */
+button {
+   background-color: var(--vermelho);
+   border: 2px solid var(--salmao);
+   border-radius: 15px;
+}
+
+#entrada {
+    padding: 0.5rem 2.8rem 0.5rem 2.8rem;
+}
+
+#cadastrar {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
 .botao {
-    background-color: var(--vermelho);
-    border-radius: 20px;
     color: var(--branco);
-    font-family: var(--fonte_principal);
-    text-align: justify;
+    font-size: 16px;
     text-decoration: none;
-    margin-bottom: 1em;
-    z-index: 1;
 }
-
-.entrar{
-    padding: 10px 10px 10px 10px;
-    text-align: center;
-}
-
-.entrar:hover {
-    background-color: var(--vermelho_escuro);
-    padding: 10px 20px 10px 20px;
-}
-
-.criar_conta{
-    padding: 10px 10px 10px 10px;
-    text-align: center;
-}
-
-.criar_conta:hover {
-    background-color: var(--vermelho_escuro);
-    padding: 10px 20px 10px 20px;
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-item{
-    padding: 6rem 3rem 5rem 3rem;
-}
-
 
 /* ---------------------------------------------------------------- */
+
+.entrada {
+    padding-bottom: 0.7rem;
+}
 
 /* Imagens */
+.imagens {
+    margin: 3.5rem 0 2rem 0;
+}
+
 .imagem1 {
-    margin: 1rem 0 0 8rem;
-    z-index: 1;
+    width: 0px;
 }
 
-.imagem4 {
-    margin: 2.8rem 0 0 3rem;
-    z-index: 1;
+.imagem2 {
+    width: 75%;
 }
-
 /* ---------------------------------------------------------------- */
+
+@media screen and (min-width: 768px) {
+    h1 {
+        color: var(--cinza_claro);
+        font-size: 80px;
+        padding: 7rem 0 3.25rem 0;
+    }
+    
+    /* ---------------------------------------------------------------- */
+    
+    .container {
+        background: linear-gradient(var(--branco), var(--cinza));
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+
+    .botoes {
+        margin-top: 7rem;
+    }
+    
+    /* ---------------------------------------------------------------- */
+    /* Botões */
+    button {
+       background-color: var(--vermelho);
+       border: 2px solid var(--salmao);
+       border-radius: 15px;
+    }
+    
+    #entrada {
+        padding: 0.6rem 3rem 0.6rem 3rem;
+    }
+    
+    #cadastrar {
+        padding: 0.6rem 1.85rem 0.6rem 1.85rem;
+    }
+    
+    .botao {
+        color: var(--branco);
+        font-size: 22px;
+        text-decoration: none;
+    }
+    
+    .entrada {
+        padding-bottom: 0.5rem;
+    }
+    
+    /* ---------------------------------------------------------------- */
+    
+    /* Imagens */  
+    .imagens {
+        margin: 5rem 1rem 5rem 1rem;
+    }
+
+    .imagem1 {
+        padding-left: 0.8rem;
+        width: 220px;
+    }
+    
+    .centro {
+        text-align: center;
+        margin: 5rem 1rem 5rem 1rem;
+    }
+    .imagem2 {
+        padding-top: 1rem;
+        width: 210px;
+    }
+    /* ---------------------------------------------------------------- */
+}
